@@ -2,7 +2,7 @@ import './ContactPage.css'
 
 const ContactPage = () => {
   return (
-    <div className>
+    <div className id="contactPage">
 
       <h1 className="Contact-page-h1">Contact</h1>
 

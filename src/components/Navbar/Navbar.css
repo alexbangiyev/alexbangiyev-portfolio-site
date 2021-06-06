@@ -1,19 +1,23 @@
 .NavbarItems {
-  background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 251, 1) 100%);
-  background-color:  ;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #ad6e24 74%);
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  position: sticky;
+  top: 0
 }
 
 .navbar-logo {
   text-decoration: white;
   color: white;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 2em;
+  display: inline-block;
   cursor: pointer;
+  width: 100%;
 }
 
 .nav-menu {
@@ -53,14 +57,15 @@ menuIcon {
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
-    position: relative;
+    position: sticky;
+    top: 0
   }
 
   .nav-menu {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: 375px;
     position: absolute;
     top: 80px;
     left: -100%;
@@ -69,30 +74,35 @@ menuIcon {
   }
 
   .nav-menu.active {
-    background: #6668f4;
+    background: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #ad6e24 74%);
     left: 0;
     opacity: 1;
     transition: all 0.5 ease;
-    z-index: 1
+    z-index: 1;
+    padding: 0;
+    margin-top: 0
   }
 
   .nav-links {
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table
+    display: table;
   }
 
   .nav-links:hover {
-    background-color: #7577fa;
+    background-color: white;
+    color: black;
     border-radius: 0;
+    width: 100%
   }
 
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%)
+  .navbar-logo-display {
+    justify-self: start;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
   }
 
   menuIcon {

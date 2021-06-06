@@ -21,7 +21,10 @@ const FrontPage = () => {
   }, []);
 
   return (
-    <div className="Front-page">
+    <div className="Front-page" id="frontPage">
+      
+      &nbsp;
+      
       <p>I<span> </span>
           <TextTransition
             className="Transition-div"
