@@ -1,0 +1,23 @@
+.About-page {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  text-align: right;
+}
+
+.About-page-h1 {
+  width: 40%;
+  margin-left: 55%;
+  font-size: 3.5em;
+}
+
+.About-section {
+  font-size: 2em;
+  margin-left: 55%;
+  width: 40%;
+  margin-bottom: 1.5em;
+}
+
+.About-span {
+  margin-right: 5%;
+}

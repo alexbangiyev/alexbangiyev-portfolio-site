@@ -1,0 +1,39 @@
+.Front-page {
+  /* display: flex;
+  justify-content: left;
+  align-items: center;   */
+  background-color: black;
+  color: white;
+  height: 100vh
+}
+
+.Links {
+  color: #FFA233;
+  font-size: 2em;
+  font-weight: 200;
+  margin-left: 2.6em;
+  width: 40%;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: .4em;
+}
+
+.Links:hover {
+   color: #FFF
+}
+
+.Front-page-h1 {
+  margin-left: 1.5em;
+  font-size: 3.5em;
+  width: 40%;
+}
+
+p {
+  font-size: 2em;
+  margin-left: 2.7em;
+  font-weight: 300;
+}
+
+.Transition-div {
+  display: inline-block !important
+}
