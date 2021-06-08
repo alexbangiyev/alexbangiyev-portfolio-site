@@ -22,13 +22,7 @@ export const Projects = [
     description: `A web app that allows teachers to track their students’ online classroom engagement via a dashboard that transmits vital 
     student data utilizing face recognition, voice recognition, key down events, and mouse click events.`,
     techStack: 
-    `Tech Stack: Sequelize/Express for backend and React/Redux for 
-    frontend
-    
-    Libraries: Socket.io, Face-api.js (library built on top of TensorFlow), 
-    Chart.js, Material-UI, and React Modal
-    
-    APIs: Web Speech API`,
+    `Yibot?`,
     iconOne: "classsync-logo.png",
     iconTwo: "github-logo.png",
     iconThree: "youtube-logo.png",
@@ -42,13 +36,7 @@ export const Projects = [
     description: `A web app that allows teachers to track their students’ online classroom engagement via a dashboard that transmits vital 
     student data utilizing face recognition, voice recognition, key down events, and mouse click events.`,
     techStack: 
-    `Tech Stack: Sequelize/Express for backend and React/Redux for 
-    frontend
-    
-    Libraries: Socket.io, Face-api.js (library built on top of TensorFlow), 
-    Chart.js, Material-UI, and React Modal
-    
-    APIs: Web Speech API`,
+    `ALBERT!`,
     iconOne: "classsync-logo.png",
     iconTwo: "github-logo.png",
     iconThree: "youtube-logo.png",
