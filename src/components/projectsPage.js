@@ -32,19 +32,30 @@ const ProjectsPage = ({ projectSlides }) => {
                 {index === current && (
 
                   <>
-                    <h1>{project.title}</h1>
-                    <p className="project-description ">{project.description}</p>
-                    <p className="project-tech-stack">{project.techStack}</p>
-                    <a href={project.linkOne} target="blank">
-                      <img src={project.iconOne} alt="Project Logo" width="50" height="50" />
-                    </a>
-                    <a href={project.linkTwo} target="blank">
-                      <img src={project.iconTwo} alt="Github Logo" width="50" height="50" />
-                    </a>
-                    <a href={project.linkThree} target="blank">
-                      <img src={project.iconThree} alt="YouTube Logo" width="auto" height="50" />
-                    </a>
-                    <img src={project.image} className="project-image" alt="Project Demo Image" width="auto" height="600px" />
+                    <div className="information-container">
+                      <h1 className="project-title">{project.title}</h1>
+                      <p className="project-description ">{project.description}</p>
+                      <p className="project-tech-stack">{project.techStack}</p>
+
+                      <span className="project-icons">
+                        <a href={project.linkOne} target="blank">
+                          <img src={project.iconOne} className="individual-icon" alt="Project Logo" width="40" height="40" />
+                        </a>
+                        <a href={project.linkTwo} target="blank">
+                          <img src={project.iconTwo} className="individual-icon" alt="Github Logo" width="40" height="40" />
+                        </a>
+                        <a href={project.linkThree} target="blank">
+                          <img src={project.iconThree} className="individual-icon" alt="YouTube Logo" width="auto" height="40" />
+                        </a>
+                      </span>
+                    </div>
+
+                    <div className="media-container">
+                      <div className="project-media" alt="Project Media">
+                        {project.youtubeVideo ? project.youtubeVideo : project.mediaFile || "Sorry! I don\'t have any media here yet."}
+                      </div>
+                    </div>
+
                   </>
 
                 )}

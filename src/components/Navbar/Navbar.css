@@ -1,12 +1,12 @@
 .NavbarItems {
   background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #ad6e24 74%);
+  /* background-image: linear-gradient(147deg, #000000 0%, #ad6e24 74%); */
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  position: sticky;
+  position: sticky; 
   top: 0
 }
 
@@ -29,6 +29,7 @@
   width: 70vw;
   justify-content: end;
   margin-right: 2rem;
+  
 }
 
 .nav-links {
@@ -37,10 +38,23 @@
   padding: 0.5rem 1rem;
 }
 
+.selected-nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #FFA233;
+  border-radius: 4px;
+}
+
 .nav-links:hover {
-  background-color: 6d76f7;
+  border-bottom: 2px solid #FFA233;
   border-radius: 4px;
   transition: all 0.2s ease-out;
+}
+
+.nav-links::selection a {
+  border-bottom: 2px solid #FFA233;
+  border-radius: 4px;
 }
 
 .fa-bars {

@@ -1,9 +1,16 @@
+.Project-page {
+  height:max-content
+}
+
 .projects-slider {
   position: relative;
-  height: 94vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-slide:active {
+  height: fit-content
 }
 
 .right-arrow {
@@ -28,14 +35,49 @@
   user-select: none;
 }
 
+.project-title {
+  font-size: 3.2em;
+  margin-left: 1.8em;
+}
+
 .project-description {
-  font-size: 10px
+  font-size: 1.5em;
+  width: 80%;
+  margin-left: 4em;
 }
 
 .project-tech-stack {
-  display: none
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 6em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  white-space: pre-line;
 }
 
-.project-image {
-  display: inline-block
+.project-icons {
+  margin-left: 6em;
+}
+
+.individual-icon {
+  margin-right: 1em;
+}
+
+.project-media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.information-container {
+  width: 50%;
+  display: inline-block;
+  align-content: center;
+  margin-bottom: 5em
+}
+
+.media-container {
+  width: 50%;
+  display: inline-block;
+  vertical-align: 4em;
+  height: fit-content
 }

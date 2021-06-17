@@ -4,10 +4,14 @@ import './Navbar.css'
 
 
 class NavBar extends Component {
-  state = { clicked: false }
+  state = { clicked: false, navbarClass: "nav-links", activeIndex: null }
 
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked})
+  }
+
+  handleClass = () => {
+    this.setState({ navbarClass: "selected-nav-link", activeIndex: this.props.index })
   }
 
   render() {
@@ -20,13 +24,23 @@ class NavBar extends Component {
 
         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems.map((item, index) =>{
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
+            if(this.state.clicked) {
+              return (
+                <li key={index} onClick={this.handleClass}>
+                  <a className="nav-links" href={item.url}>
+                    {item.title}
+                  </a>
+                </li>
+              )
+            } else {
+              return (
+                <li key={index} onClick={this.handleClass}>
+                <a className={this.state.navbarClass} href={item.url}>
                   {item.title}
                 </a>
               </li>
-            )
+              )
+            }
           })}
         </ul>
       </nav>
